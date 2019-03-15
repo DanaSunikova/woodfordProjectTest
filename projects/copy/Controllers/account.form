@@ -24,9 +24,6 @@
           <IsConstant>true</IsConstant>
         </DetailItem>
         <DetailItem SchemaName="transactioncurrencyid" Style="Normal"/>
-        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
-          <IsConstant>true</IsConstant>
-        </DetailItem>
       </SerializedChildren>
     </FormTab>
     <FormTab xsi:type="DetailTab">
