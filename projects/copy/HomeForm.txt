@@ -1,1 +1,1 @@
-﻿@Dashboard,@Map,@Tourplan,account,contact,lead,opportunity,quote,salesorder,invoice,@Setup,@About
+﻿@Dashboard,@Map,@Tourplan,account,contact,lead,quote,salesorder,invoice,@Setup,@About

@@ -1,73 +1,50 @@
-<?xml version="1.0"?>
-<EntityForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" version="2">
+﻿<EntityForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:dummy="0" flexi="0" fleximode="1" fullscreen="0" resize="0" version="2">
   <IsContactForm>false</IsContactForm>
   <EntityName>account</EntityName>
   <CamelCase>account</CamelCase>
-  <ClassBinding />
-  <SerializedChildren />
+  <PrimaryCommands>!defcmd</PrimaryCommands>
+  <ClassBinding/>
+  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
   <SerializedChildrenV2>
     <FormTab xsi:type="DetailTab">
       <Name>General</Name>
       <SerializedChildren>
-        <DetailItem SchemaName="name" Style="Normal">
-          <IsConstant>false</IsConstant>
+        <DetailItem SchemaName="name" Style="Normal"/>
+        <DetailItem SchemaName="emailaddress1" Style="Normal"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem" Style="Normal">
+          <IsConstant>true</IsConstant>
         </DetailItem>
-        <DetailItem SchemaName="emailaddress1" Style="Normal">
-          <IsConstant>false</IsConstant>
+        <DetailItem SchemaName="telephone1" Style="Normal"/>
+        <DetailItem SchemaName="fax" Style="Normal"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem" Style="Normal">
+          <IsConstant>true</IsConstant>
         </DetailItem>
-        <DetailItem xsi:type="SeparatorDetailItem" Style="Normal">
-          <IsConstant>false</IsConstant>
+        <DetailItem SchemaName="websiteurl" Style="Normal"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem" Style="Normal">
+          <IsConstant>true</IsConstant>
         </DetailItem>
-        <DetailItem SchemaName="telephone1" Style="Normal">
-          <IsConstant>false</IsConstant>
-        </DetailItem>
-        <DetailItem SchemaName="fax" Style="Normal">
-          <IsConstant>false</IsConstant>
-        </DetailItem>
-        <DetailItem xsi:type="SeparatorDetailItem" Style="Normal">
-          <IsConstant>false</IsConstant>
-        </DetailItem>
-        <DetailItem SchemaName="websiteurl" Style="Normal">
-          <IsConstant>false</IsConstant>
-        </DetailItem>
-        <DetailItem xsi:type="SeparatorDetailItem" Style="Normal">
-          <IsConstant>false</IsConstant>
-        </DetailItem>
-        <DetailItem SchemaName="transactioncurrencyid" Style="Normal">
-          <IsConstant>false</IsConstant>
+        <DetailItem SchemaName="transactioncurrencyid" Style="Normal"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem">
+          <IsConstant>true</IsConstant>
         </DetailItem>
       </SerializedChildren>
     </FormTab>
     <FormTab xsi:type="DetailTab">
       <Name>Address</Name>
       <SerializedChildren>
-        <DetailItem SchemaName="address1_line1" Style="Normal">
-          <IsConstant>false</IsConstant>
+        <DetailItem SchemaName="address1_line1" Style="Normal"/>
+        <DetailItem SchemaName="address1_line2" Style="Normal"/>
+        <DetailItem SchemaName="address1_line3" Style="Normal"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem" Style="Normal">
+          <IsConstant>true</IsConstant>
         </DetailItem>
-        <DetailItem SchemaName="address1_line2" Style="Normal">
-          <IsConstant>false</IsConstant>
+        <DetailItem SchemaName="address1_city" Style="Normal"/>
+        <DetailItem SchemaName="address1_postalcode" Style="Normal"/>
+        <DetailItem separator="true" xsi:type="SeparatorDetailItem" Style="Normal">
+          <IsConstant>true</IsConstant>
         </DetailItem>
-        <DetailItem SchemaName="address1_line3" Style="Normal">
-          <IsConstant>false</IsConstant>
-        </DetailItem>
-        <DetailItem xsi:type="SeparatorDetailItem" Style="Normal">
-          <IsConstant>false</IsConstant>
-        </DetailItem>
-        <DetailItem SchemaName="address1_city" Style="Normal">
-          <IsConstant>false</IsConstant>
-        </DetailItem>
-        <DetailItem SchemaName="address1_postalcode" Style="Normal">
-          <IsConstant>false</IsConstant>
-        </DetailItem>
-        <DetailItem xsi:type="SeparatorDetailItem" Style="Normal">
-          <IsConstant>false</IsConstant>
-        </DetailItem>
-        <DetailItem SchemaName="address1_stateorprovince" Style="Normal">
-          <IsConstant>false</IsConstant>
-        </DetailItem>
-        <DetailItem SchemaName="address1_country" Style="Normal">
-          <IsConstant>false</IsConstant>
-        </DetailItem>
+        <DetailItem SchemaName="address1_stateorprovince" Style="Normal"/>
+        <DetailItem SchemaName="address1_country" Style="Normal"/>
       </SerializedChildren>
     </FormTab>
     <FormTab xsi:type="MapTab">
@@ -76,38 +53,19 @@
     </FormTab>
     <FormTab xsi:type="AssociatedTab">
       <Name>Contacts List</Name>
-      <LogicalName>contact.parentcustomerid</LogicalName>
-      <Binding SchemaName="contact.parentcustomerid">
-        <IsConstant>false</IsConstant>
-      </Binding>
+      <Binding SchemaName="contact.parentcustomerid"/>
     </FormTab>
     <FormTab xsi:type="AssociatedTab">
       <Name>Opportunities List</Name>
-      <LogicalName>opportunity.customerid</LogicalName>
-      <Binding SchemaName="opportunity.customerid">
-        <IsConstant>false</IsConstant>
-      </Binding>
+      <Binding SchemaName="opportunity.customerid"/>
     </FormTab>
     <FormTab xsi:type="AssociatedTab">
       <Name>Activity List</Name>
-      <LogicalName>activity.regardingobjectid</LogicalName>
-      <Binding SchemaName="activity.regardingobjectid">
-        <IsConstant>false</IsConstant>
-      </Binding>
+      <Binding SchemaName="activity.regardingobjectid"/>
     </FormTab>
     <FormTab xsi:type="AssociatedTab">
-      <Name>Annotations List</Name>
-      <LogicalName>annotation.objectid</LogicalName>
-      <Binding SchemaName="annotation.objectid">
-        <IsConstant>false</IsConstant>
-      </Binding>
+      <Name>Notes List</Name>
+      <Binding SchemaName="annotation.objectid"/>
     </FormTab>
   </SerializedChildrenV2>
-  <Navigation>
-    <Name>Navigation</Name>
-    <SerializedChildren />
-  </Navigation>
-  <PrimaryCommands>!defcmd</PrimaryCommands>
-  <EnabledWorkflows>OnLoadEnabled OnChangeEnabled OnSaveEnabled OnExecuteCommand OnCanExecuteCommand</EnabledWorkflows>
-  <SerializedContactInfo />
 </EntityForm>
