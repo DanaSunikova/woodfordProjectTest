@@ -1,1 +1,1 @@
-﻿@Dashboard,@Map,@activity,@Tourplan,@Setup,@About
+﻿@Dashboard,@Map,@activity,@Tourplan,@Setup,@About,sf_account
